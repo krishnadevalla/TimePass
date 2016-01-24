@@ -1,0 +1,397 @@
+﻿<Window x:Class="change.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:change"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="758.147" Width="1310.117" Loaded="Window_Loaded" KeyDown="Window_KeyDown">
+    <StackPanel>
+        <Menu IsMainMenu="True">
+            <MenuItem Header="_File">
+                <MenuItem x:Name="start" Header="Start" Click="start_Click">
+                </MenuItem>
+                <MenuItem x:Name="stop" Header="Stop" Click="stop_Click">
+                </MenuItem>
+                <MenuItem x:Name="exit" Header="Exit" Click="exit_Click">
+                </MenuItem>
+               
+            </MenuItem>
+            <MenuItem Header="_Edit">
+                <MenuItem x:Name="inc" Header="/\ speed" Click="inc_Click">
+                </MenuItem>
+                <MenuItem x:Name="dec" Header="\/ speed" Click="dec_Click">
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <Canvas x:Name="main">
+            <Grid Name="g1"  HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50"/>
+            <Grid Name="g2"  HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="50"/>
+            <Grid Name="g3" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="600"/>
+            <Grid Name="g4" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="550"/>
+            <Grid Name="g5" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="500"/>
+            <Grid Name="g6" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="450"/>
+            <Grid Name="g7" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="400"/>
+            <Grid Name="g8" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="350"/>
+            <Grid Name="g9" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="300"/>
+            <Grid Name="g10" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="250"/>
+            <Grid Name="g11" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="150"/>
+            <Grid Name="g12" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="200"/>
+            <Grid Name="g13" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="100"/>
+            <Grid Name="g14" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Top="100"/>
+            <Grid Name="g15" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="50" Canvas.Top="100"/>
+            <Grid Name="g16" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="600" Canvas.Top="100"/>
+            <Grid Name="g17" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="550" Canvas.Top="100"/>
+            <Grid Name="g18" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="500" Canvas.Top="100"/>
+            <Grid Name="g19" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="450" Canvas.Top="100"/>
+            <Grid Name="g20" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="400" Canvas.Top="100"/>
+            <Grid Name="g21" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="350" Canvas.Top="100"/>
+            <Grid Name="g22" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="300" Canvas.Top="100"/>
+            <Grid Name="g23" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="250" Canvas.Top="100"/>
+            <Grid Name="g24" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="150" Canvas.Top="100"/>
+            <Grid Name="g25" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="200" Canvas.Top="100"/>
+            <Grid Name="g26" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="100" Canvas.Top="100"/>
+            <Grid Name="g27" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Top="150"/>
+            <Grid Name="g28" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="50" Canvas.Top="150"/>
+            <Grid Name="g29" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="600" Canvas.Top="150"/>
+            <Grid Name="g30" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="550" Canvas.Top="150"/>
+            <Grid Name="g31" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="500" Canvas.Top="150"/>
+            <Grid Name="g32" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="450" Canvas.Top="150"/>
+            <Grid Name="g33" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="400" Canvas.Top="150"/>
+            <Grid Name="g34" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="350" Canvas.Top="150"/>
+            <Grid Name="g35" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="300" Canvas.Top="150"/>
+            <Grid Name="g36" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="250" Canvas.Top="150"/>
+            <Grid Name="g37" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="150" Canvas.Top="150"/>
+            <Grid Name="g38" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="200" Canvas.Top="150"/>
+            <Grid Name="g39" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="100" Canvas.Top="150"/>
+            <Grid Name="g40" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Top="201"/>
+            <Grid Name="g41" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="50" Canvas.Top="199"/>
+            <Grid Name="g42" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="600" Canvas.Top="199"/>
+            <Grid Name="g43" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="550" Canvas.Top="199"/>
+            <Grid Name="g44" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="500" Canvas.Top="199"/>
+            <Grid Name="g45" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="450" Canvas.Top="199"/>
+            <Grid Name="g46" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="400" Canvas.Top="199"/>
+            <Grid Name="g47" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="350" Canvas.Top="199"/>
+            <Grid Name="g48" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="300" Canvas.Top="199"/>
+            <Grid Name="g49" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="250" Canvas.Top="199"/>
+            <Grid Name="g50" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="150" Canvas.Top="199"/>
+            <Grid Name="g51" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="200" Canvas.Top="199"/>
+            <Grid Name="g52" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="100" Canvas.Top="199"/>
+            <Grid Name="g53" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Top="249"/>
+            <Grid Name="g54" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="50" Canvas.Top="249"/>
+            <Grid Name="g55" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="600" Canvas.Top="249"/>
+            <Grid Name="g56" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="550" Canvas.Top="249"/>
+            <Grid Name="g57" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="500" Canvas.Top="249"/>
+            <Grid Name="g58" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="450" Canvas.Top="249"/>
+            <Grid Name="g59" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="400" Canvas.Top="249"/>
+            <Grid Name="g60" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="350" Canvas.Top="249"/>
+            <Grid Name="g61" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="300" Canvas.Top="249"/>
+            <Grid Name="g62" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="250" Canvas.Top="249"/>
+            <Grid Name="g63" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="150" Canvas.Top="249"/>
+            <Grid Name="g64" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="200" Canvas.Top="249"/>
+            <Grid Name="g65" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="100" Canvas.Top="249"/>
+            <Grid Name="g66" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Top="299"/>
+            <Grid Name="g67" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="50" Canvas.Top="299"/>
+            <Grid Name="g68" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="600" Canvas.Top="299"/>
+            <Grid Name="g69" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="550" Canvas.Top="299"/>
+            <Grid Name="g70" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="500" Canvas.Top="299"/>
+            <Grid Name="g71" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="450" Canvas.Top="299"/>
+            <Grid Name="g72" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="400" Canvas.Top="299"/>
+            <Grid Name="g73" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="350" Canvas.Top="299"/>
+            <Grid Name="g74" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="300" Canvas.Top="299"/>
+            <Grid Name="g75" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="250" Canvas.Top="299"/>
+            <Grid Name="g76" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="150" Canvas.Top="299"/>
+            <Grid Name="g77" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="200" Canvas.Top="299"/>
+            <Grid Name="g78" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="100" Canvas.Top="299"/>
+            <Grid Name="g79" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Top="50"/>
+            <Grid Name="g80" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="50" Canvas.Top="50"/>
+            <Grid Name="g81" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="600" Canvas.Top="50"/>
+            <Grid Name="g82" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="550" Canvas.Top="50"/>
+            <Grid Name="g83" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="500" Canvas.Top="50"/>
+            <Grid Name="g84" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="450" Canvas.Top="50"/>
+            <Grid Name="g85" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="400" Canvas.Top="50"/>
+            <Grid Name="g86" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="350" Canvas.Top="50"/>
+            <Grid Name="g87" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="300" Canvas.Top="50"/>
+            <Grid Name="g88" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="250" Canvas.Top="50"/>
+            <Grid Name="g89" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="150" Canvas.Top="50"/>
+            <Grid Name="g90" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="200" Canvas.Top="50"/>
+            <Grid Name="g91" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="100" Canvas.Top="50"/>
+            <Grid x:Name="g1_Copy"  HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="648"/>
+            <Grid x:Name="g2_Copy"  HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="698"/>
+            <Grid x:Name="g3_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1248"/>
+            <Grid x:Name="g4_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1198"/>
+            <Grid x:Name="g5_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1148"/>
+            <Grid x:Name="g6_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1098"/>
+            <Grid x:Name="g7_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1048"/>
+            <Grid x:Name="g8_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="998"/>
+            <Grid x:Name="g9_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="948"/>
+            <Grid x:Name="g10_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="898"/>
+            <Grid x:Name="g11_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="798"/>
+            <Grid x:Name="g12_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="848"/>
+            <Grid x:Name="g13_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="748"/>
+            <Grid x:Name="g14_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Top="100" Canvas.Left="648"/>
+            <Grid x:Name="g15_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="698" Canvas.Top="100"/>
+            <Grid x:Name="g16_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1248" Canvas.Top="100"/>
+            <Grid x:Name="g17_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1198" Canvas.Top="100"/>
+            <Grid x:Name="g18_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1148" Canvas.Top="100"/>
+            <Grid x:Name="g19_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1098" Canvas.Top="100"/>
+            <Grid x:Name="g20_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1048" Canvas.Top="100"/>
+            <Grid x:Name="g21_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="998" Canvas.Top="100"/>
+            <Grid x:Name="g22_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="948" Canvas.Top="100"/>
+            <Grid x:Name="g23_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="898" Canvas.Top="100"/>
+            <Grid x:Name="g24_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="798" Canvas.Top="100"/>
+            <Grid x:Name="g25_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="848" Canvas.Top="100"/>
+            <Grid x:Name="g26_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="748" Canvas.Top="100"/>
+            <Grid x:Name="g27_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Top="150" Canvas.Left="648"/>
+            <Grid x:Name="g28_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="698" Canvas.Top="150"/>
+            <Grid x:Name="g29_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1248" Canvas.Top="150"/>
+            <Grid x:Name="g30_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1198" Canvas.Top="150"/>
+            <Grid x:Name="g31_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1148" Canvas.Top="150"/>
+            <Grid x:Name="g32_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1098" Canvas.Top="150"/>
+            <Grid x:Name="g33_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1048" Canvas.Top="150"/>
+            <Grid x:Name="g34_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="998" Canvas.Top="150"/>
+            <Grid x:Name="g35_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="948" Canvas.Top="150"/>
+            <Grid x:Name="g36_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="898" Canvas.Top="150"/>
+            <Grid x:Name="g37_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="798" Canvas.Top="150"/>
+            <Grid x:Name="g38_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="848" Canvas.Top="150"/>
+            <Grid x:Name="g39_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="748" Canvas.Top="150"/>
+            <Grid x:Name="g40_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Top="199" Canvas.Left="648"/>
+            <Grid x:Name="g41_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="698" Canvas.Top="199"/>
+            <Grid x:Name="g42_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1248" Canvas.Top="199"/>
+            <Grid x:Name="g43_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1198" Canvas.Top="199"/>
+            <Grid x:Name="g44_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1148" Canvas.Top="199"/>
+            <Grid x:Name="g45_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1098" Canvas.Top="199"/>
+            <Grid x:Name="g46_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1048" Canvas.Top="199"/>
+            <Grid x:Name="g47_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="998" Canvas.Top="199"/>
+            <Grid x:Name="g48_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="948" Canvas.Top="199"/>
+            <Grid x:Name="g49_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="898" Canvas.Top="199"/>
+            <Grid x:Name="g50_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="798" Canvas.Top="199"/>
+            <Grid x:Name="g51_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="848" Canvas.Top="199"/>
+            <Grid x:Name="g52_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="748" Canvas.Top="199"/>
+            <Grid x:Name="g53_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Top="249" Canvas.Left="648"/>
+            <Grid x:Name="g54_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="698" Canvas.Top="249"/>
+            <Grid x:Name="g55_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1248" Canvas.Top="249"/>
+            <Grid x:Name="g56_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1198" Canvas.Top="249"/>
+            <Grid x:Name="g57_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1148" Canvas.Top="249"/>
+            <Grid x:Name="g58_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1098" Canvas.Top="249"/>
+            <Grid x:Name="g59_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1048" Canvas.Top="249"/>
+            <Grid x:Name="g60_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="998" Canvas.Top="249"/>
+            <Grid x:Name="g61_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="948" Canvas.Top="249"/>
+            <Grid x:Name="g62_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="898" Canvas.Top="249"/>
+            <Grid x:Name="g63_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="798" Canvas.Top="249"/>
+            <Grid x:Name="g64_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="848" Canvas.Top="249"/>
+            <Grid x:Name="g65_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="748" Canvas.Top="249"/>
+            <Grid x:Name="g66_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Top="299" Canvas.Left="648"/>
+            <Grid x:Name="g67_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="698" Canvas.Top="299"/>
+            <Grid x:Name="g68_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1248" Canvas.Top="299"/>
+            <Grid x:Name="g69_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1198" Canvas.Top="299"/>
+            <Grid x:Name="g70_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1148" Canvas.Top="299"/>
+            <Grid x:Name="g71_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1098" Canvas.Top="299"/>
+            <Grid x:Name="g72_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1048" Canvas.Top="299"/>
+            <Grid x:Name="g73_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="998" Canvas.Top="299"/>
+            <Grid x:Name="g74_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="948" Canvas.Top="299"/>
+            <Grid x:Name="g75_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="898" Canvas.Top="299"/>
+            <Grid x:Name="g76_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="798" Canvas.Top="299"/>
+            <Grid x:Name="g77_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="848" Canvas.Top="299"/>
+            <Grid x:Name="g78_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="748" Canvas.Top="299"/>
+            <Grid x:Name="g79_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Top="50" Canvas.Left="648"/>
+            <Grid x:Name="g80_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="698" Canvas.Top="50"/>
+            <Grid x:Name="g81_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1248" Canvas.Top="50"/>
+            <Grid x:Name="g82_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1198" Canvas.Top="50"/>
+            <Grid x:Name="g83_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1148" Canvas.Top="50"/>
+            <Grid x:Name="g84_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1098" Canvas.Top="50"/>
+            <Grid x:Name="g85_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="1048" Canvas.Top="50"/>
+            <Grid x:Name="g86_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="998" Canvas.Top="50"/>
+            <Grid x:Name="g87_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="948" Canvas.Top="50"/>
+            <Grid x:Name="g88_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="898" Canvas.Top="50"/>
+            <Grid x:Name="g89_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="798" Canvas.Top="50"/>
+            <Grid x:Name="g90_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="848" Canvas.Top="50"/>
+            <Grid x:Name="g91_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Canvas.Left="748" Canvas.Top="50">
+                <Grid x:Name="g1_Copy1"  HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-748,298,0,-298"/>
+                <Grid x:Name="g2_Copy1"  HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-698,298,0,-298"/>
+                <Grid x:Name="g3_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-148,298,0,-298"/>
+                <Grid x:Name="g4_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-198,298,0,-298"/>
+                <Grid x:Name="g5_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-248,298,0,-298"/>
+                <Grid x:Name="g6_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-298,298,0,-298"/>
+                <Grid x:Name="g7_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-348,298,0,-298"/>
+                <Grid x:Name="g8_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-398,298,0,-298"/>
+                <Grid x:Name="g9_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-448,298,0,-298"/>
+                <Grid x:Name="g10_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-498,298,0,-298"/>
+                <Grid x:Name="g11_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-598,298,0,-298"/>
+                <Grid x:Name="g12_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-548,298,0,-298"/>
+                <Grid x:Name="g13_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-648,298,0,-298"/>
+                <Grid x:Name="g14_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-748,398,0,-398"/>
+                <Grid x:Name="g15_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-698,398,0,-398"/>
+                <Grid x:Name="g16_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-148,398,0,-398"/>
+                <Grid x:Name="g17_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-198,398,0,-398"/>
+                <Grid x:Name="g18_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-248,398,0,-398"/>
+                <Grid x:Name="g19_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-298,398,0,-398"/>
+                <Grid x:Name="g20_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-348,398,0,-398"/>
+                <Grid x:Name="g21_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-398,398,0,-398"/>
+                <Grid x:Name="g22_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-448,398,0,-398"/>
+                <Grid x:Name="g23_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-498,398,0,-398"/>
+                <Grid x:Name="g24_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-598,398,0,-398"/>
+                <Grid x:Name="g25_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-548,398,0,-398"/>
+                <Grid x:Name="g26_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-648,398,0,-398"/>
+                <Grid x:Name="g27_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-748,448,0,-448"/>
+                <Grid x:Name="g28_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-698,448,0,-448"/>
+                <Grid x:Name="g29_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-148,448,0,-448"/>
+                <Grid x:Name="g30_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-198,448,0,-448"/>
+                <Grid x:Name="g31_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-248,448,0,-448"/>
+                <Grid x:Name="g32_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-298,448,0,-448"/>
+                <Grid x:Name="g33_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-348,448,0,-448"/>
+                <Grid x:Name="g34_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-398,448,0,-448"/>
+                <Grid x:Name="g35_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-448,448,0,-448"/>
+                <Grid x:Name="g36_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-498,448,0,-448"/>
+                <Grid x:Name="g37_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-598,448,0,-448"/>
+                <Grid x:Name="g38_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-548,448,0,-448"/>
+                <Grid x:Name="g39_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-648,448,0,-448"/>
+                <Grid x:Name="g40_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-748,498,0,-498"/>
+                <Grid x:Name="g41_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-698,496,0,-496"/>
+                <Grid x:Name="g42_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-148,496,0,-496"/>
+                <Grid x:Name="g43_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-198,496,0,-496"/>
+                <Grid x:Name="g44_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-248,496,0,-496"/>
+                <Grid x:Name="g45_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-298,496,0,-496"/>
+                <Grid x:Name="g46_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-348,496,0,-496"/>
+                <Grid x:Name="g47_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-398,496,0,-496"/>
+                <Grid x:Name="g48_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-448,496,0,-496"/>
+                <Grid x:Name="g49_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-498,496,0,-496"/>
+                <Grid x:Name="g50_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-598,496,0,-496"/>
+                <Grid x:Name="g51_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-548,496,0,-496"/>
+                <Grid x:Name="g52_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-648,496,0,-496"/>
+                <Grid x:Name="g53_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-748,546,0,-546"/>
+                <Grid x:Name="g54_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-698,546,0,-546"/>
+                <Grid x:Name="g55_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-148,546,0,-546"/>
+                <Grid x:Name="g56_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-198,546,0,-546"/>
+                <Grid x:Name="g57_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-248,546,0,-546"/>
+                <Grid x:Name="g58_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-298,546,0,-546"/>
+                <Grid x:Name="g59_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-348,546,0,-546"/>
+                <Grid x:Name="g60_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-398,546,0,-546"/>
+                <Grid x:Name="g61_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-448,546,0,-546"/>
+                <Grid x:Name="g62_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-498,546,0,-546"/>
+                <Grid x:Name="g63_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-598,546,0,-546"/>
+                <Grid x:Name="g64_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-548,546,0,-546"/>
+                <Grid x:Name="g65_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-648,546,0,-546"/>
+                <Grid x:Name="g66_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-748,596,0,-596"/>
+                <Grid x:Name="g67_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-698,596,0,-596"/>
+                <Grid x:Name="g68_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-148,596,0,-596"/>
+                <Grid x:Name="g69_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-198,596,0,-596"/>
+                <Grid x:Name="g70_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-248,596,0,-596"/>
+                <Grid x:Name="g71_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-298,596,0,-596"/>
+                <Grid x:Name="g72_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-348,596,0,-596"/>
+                <Grid x:Name="g73_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-398,596,0,-596"/>
+                <Grid x:Name="g74_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-448,596,0,-596"/>
+                <Grid x:Name="g75_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-498,596,0,-596"/>
+                <Grid x:Name="g76_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-598,596,0,-596"/>
+                <Grid x:Name="g77_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-548,596,0,-596"/>
+                <Grid x:Name="g78_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-648,596,0,-596"/>
+                <Grid x:Name="g79_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-748,348,0,-348"/>
+                <Grid x:Name="g80_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-698,348,0,-348"/>
+                <Grid x:Name="g81_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-148,348,0,-348"/>
+                <Grid x:Name="g82_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-198,348,0,-348"/>
+                <Grid x:Name="g83_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-248,348,0,-348"/>
+                <Grid x:Name="g84_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-298,348,0,-348"/>
+                <Grid x:Name="g85_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-348,348,0,-348"/>
+                <Grid x:Name="g86_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-398,348,0,-348"/>
+                <Grid x:Name="g87_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-448,348,0,-348"/>
+                <Grid x:Name="g88_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-498,348,0,-348"/>
+                <Grid x:Name="g89_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-598,348,0,-348"/>
+                <Grid x:Name="g90_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-548,348,0,-348"/>
+                <Grid x:Name="g91_Copy1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="-648,348,0,-348">
+                    <Grid x:Name="g1_Copy2"  HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="550,-50,-550,0"/>
+                    <Grid x:Name="g2_Copy2"  HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="600,-50,-600,0"/>
+                    <Grid x:Name="g3_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="1150,-50,-1150,0"/>
+                    <Grid x:Name="g4_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="1100,-50,-1100,0"/>
+                    <Grid x:Name="g5_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="1050,-50,-1050,0"/>
+                    <Grid x:Name="g6_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="1000,-50,-1000,0"/>
+                    <Grid x:Name="g7_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="950,-50,-950,0"/>
+                    <Grid x:Name="g8_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="900,-50,-900,0"/>
+                    <Grid x:Name="g9_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="850,-50,-850,0"/>
+                    <Grid x:Name="g10_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="800,-50,-800,0"/>
+                    <Grid x:Name="g11_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="700,-50,-700,0"/>
+                    <Grid x:Name="g12_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="750,-50,-750,0"/>
+                    <Grid x:Name="g13_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="650,-50,-650,0"/>
+                    <Grid x:Name="g14_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="550,50,-550,-50"/>
+                    <Grid x:Name="g15_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="600,50,-600,-50"/>
+                    <Grid x:Name="g16_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="1150,50,-1150,-50"/>
+                    <Grid x:Name="g17_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="1100,50,-1100,-50"/>
+                    <Grid x:Name="g18_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="1050,50,-1050,-50"/>
+                    <Grid x:Name="g19_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="1000,50,-1000,-50"/>
+                    <Grid x:Name="g20_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="950,50,-950,-50"/>
+                    <Grid x:Name="g21_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="900,50,-900,-50"/>
+                    <Grid x:Name="g22_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="850,50,-850,-50"/>
+                    <Grid x:Name="g23_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="800,50,-800,-50"/>
+                    <Grid x:Name="g24_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="700,50,-700,-50"/>
+                    <Grid x:Name="g25_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="750,50,-750,-50"/>
+                    <Grid x:Name="g26_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="650,50,-650,-50"/>
+                    <Grid x:Name="g27_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="550,100,-550,-100"/>
+                    <Grid x:Name="g28_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="600,100,-600,-100"/>
+                    <Grid x:Name="g29_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="1150,100,-1150,-100"/>
+                    <Grid x:Name="g30_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="1100,100,-1100,-100"/>
+                    <Grid x:Name="g31_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="1050,100,-1050,-100"/>
+                    <Grid x:Name="g32_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="1000,100,-1000,-100"/>
+                    <Grid x:Name="g33_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="950,100,-950,-100"/>
+                    <Grid x:Name="g34_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="900,100,-900,-100"/>
+                    <Grid x:Name="g35_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="850,100,-850,-100"/>
+                    <Grid x:Name="g36_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="800,100,-800,-100"/>
+                    <Grid x:Name="g37_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="700,100,-700,-100"/>
+                    <Grid x:Name="g38_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="750,100,-750,-100"/>
+                    <Grid x:Name="g39_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="650,100,-650,-100"/>
+                    <Grid x:Name="g40_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="550,150,-550,-150"/>
+                    <Grid x:Name="g41_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="600,150,-600,-150"/>
+                    <Grid x:Name="g42_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="1150,150,-1150,-150"/>
+                    <Grid x:Name="g43_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="1100,150,-1100,-150"/>
+                    <Grid x:Name="g44_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="1050,150,-1050,-150"/>
+                    <Grid x:Name="g45_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="1000,150,-1000,-150"/>
+                    <Grid x:Name="g46_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="950,150,-950,-150"/>
+                    <Grid x:Name="g47_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="900,150,-900,-150"/>
+                    <Grid x:Name="g48_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="850,150,-850,-150"/>
+                    <Grid x:Name="g49_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="800,150,-800,-150"/>
+                    <Grid x:Name="g50_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="700,150,-700,-150"/>
+                    <Grid x:Name="g51_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="750,150,-750,-150"/>
+                    <Grid x:Name="g52_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="650,150,-650,-150"/>
+                    <Grid x:Name="g53_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="550,200,-550,-200"/>
+                    <Grid x:Name="g54_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="600,200,-600,-200"/>
+                    <Grid x:Name="g55_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="1150,200,-1150,-200"/>
+                    <Grid x:Name="g56_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="1100,200,-1100,-200"/>
+                    <Grid x:Name="g57_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="1050,200,-1050,-200"/>
+                    <Grid x:Name="g58_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="1000,200,-1000,-200"/>
+                    <Grid x:Name="g59_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="950,200,-950,-200"/>
+                    <Grid x:Name="g60_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="900,200,-900,-200"/>
+                    <Grid x:Name="g61_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="850,200,-850,-200"/>
+                    <Grid x:Name="g62_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="800,200,-800,-200"/>
+                    <Grid x:Name="g63_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="700,200,-700,-200"/>
+                    <Grid x:Name="g64_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="750,200,-750,-200"/>
+                    <Grid x:Name="g65_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="650,200,-650,-200"/>
+                    <Grid x:Name="g66_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="550,250,-550,-250"/>
+                    <Grid x:Name="g67_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="600,250,-600,-250"/>
+                    <Grid x:Name="g68_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="1150,250,-1150,-250"/>
+                    <Grid x:Name="g69_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="1100,250,-1100,-250"/>
+                    <Grid x:Name="g70_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="1050,250,-1050,-250"/>
+                    <Grid x:Name="g71_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="1000,250,-1000,-250"/>
+                    <Grid x:Name="g72_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="950,250,-950,-250"/>
+                    <Grid x:Name="g73_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="900,250,-900,-250"/>
+                    <Grid x:Name="g74_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="850,250,-850,-250"/>
+                    <Grid x:Name="g75_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="800,250,-800,-250"/>
+                    <Grid x:Name="g76_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="700,250,-700,-250"/>
+                    <Grid x:Name="g77_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="750,250,-750,-250"/>
+                    <Grid x:Name="g78_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="650,250,-650,-250"/>
+                    <Grid x:Name="g79_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="550,0,-550,0"/>
+                    <Grid x:Name="g80_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="600,0,-600,0"/>
+                    <Grid x:Name="g81_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="1150,0,-1150,0"/>
+                    <Grid x:Name="g82_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="1100,0,-1100,0"/>
+                    <Grid x:Name="g83_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="1050,0,-1050,0"/>
+                    <Grid x:Name="g84_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="1000,0,-1000,0"/>
+                    <Grid x:Name="g85_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="950,0,-950,0"/>
+                    <Grid x:Name="g86_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="900,0,-900,0"/>
+                    <Grid x:Name="g87_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="850,0,-850,0"/>
+                    <Grid x:Name="g88_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="800,0,-800,0"/>
+                    <Grid x:Name="g89_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="700,0,-700,0"/>
+                    <Grid x:Name="g90_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="750,0,-750,0"/>
+                    <Grid x:Name="g91_Copy2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="650,0,-650,0"/>
+                </Grid>
+            </Grid>
+
+        </Canvas>
+    </StackPanel>
+</Window>
